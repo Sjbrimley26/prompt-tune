@@ -31,7 +31,7 @@ deepseek's best prompt is longer, and the 4 B seat failed or mis-parsed on 33 of
 model even when the text is better.
 
 The full aggregate table, the abort of a first arm on a too-small completion cap, and caveats sit in the
-lab-excerpt of the sibling repo: [small-gpu-bench, `docs/excerpts/prompt-tune.md`](https://github.com/Sjbrimley26/small-gpu-bench/blob/main/docs/excerpts/prompt-tune.md).
+lab-excerpt of the sibling repo: [small-gpu-bench, `docs/excerpts/prompt-tune.md`](https://github.com/Sjbrimley26/small-gpu-bench/blob/master/docs/excerpts/prompt-tune.md).
 Run records stay out of this repo (`runs/` is git-ignored); the same loop with a fake local model, a fake
 cloud and synthetic payees is covered by the tests, including the leak assertions.
 
