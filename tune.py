@@ -381,7 +381,8 @@ def main(argv=None):
     ap.add_argument("cmd", choices=["baseline", "approve-gateway", "run", "show", "selftest"])
     ap.add_argument("run_id", nargs="?")
     ap.add_argument("--seat", default="vision-text")
-    ap.add_argument("--url", default="http://localhost:8090/v1")
+    # BASE_URL wins over the default so a run works against any OpenAI-compatible server without a flag
+    ap.add_argument("--url", default=os.environ.get("BASE_URL", "http://localhost:8080/v1"))
     ap.add_argument("--rounds", type=int, default=6)
     ap.add_argument("--cloud-model", default="glm-5.3")
     ap.add_argument("--cloud-url", default=CLOUD_URL)

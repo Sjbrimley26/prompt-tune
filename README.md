@@ -14,6 +14,9 @@ First real run (GPU back in fedora; takes the GPU lease, restores aux):
 Use a winner:  python3 -I ~/bin/categorize.py in.csv out.csv --instructions runs/<id>/best.txt --fresh
 Tests:         python3 -I -m unittest discover -s tests
 
+The local seat answers through any OpenAI-compatible server: `--url` sets the root, and the `BASE_URL`
+environment variable wins over the built-in default (`http://localhost:8080/v1`).
+
 ## First real runs (2026-11-12)
 
 Same local seat (a 4 B model on a 4 GB GPU), 6 rounds each, the last ~40% of the labelled keys (91) held out

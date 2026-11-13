@@ -1,5 +1,7 @@
 # Log
 
+- 2026-11-13 (later): the local endpoint no longer hardcodes a port: --url falls back to the BASE_URL env, else http://localhost:8080/v1; the private scanner now gates git-tracked files only and lives outside this repo.
+
 - 2026-11-13: first real runs recorded (2026-11-12): glm-5.3-flash tune 34->44, holdout 11->26 (p=1.00); deepseek-v4.1-flash tune 34->40, holdout 11->20 (p=0.55) with the local seat failing on 33/91 holdout keys under its longer prompt. Reading: both gains are abstention, not new correct answers. Aggregates published in the small-gpu-bench repo (two PTUNE rows + docs/excerpts/prompt-tune.md); this repo was sanitized for public release (absolute paths and bank-tool name genericized) and committed; runs/ stays out of git.
 
 - 2026-11-13: first real runs recorded (2026-11-12): glm-5.3-flash tune 34->44, holdout 11->26 (p=1.00); deepseek-v4.1-flash tune 34->40, holdout 11->20 (p=0.55) with the local seat failing on 33/91 holdout keys under its longer prompt. Reading: both gains are abstention, not new correct answers. Aggregates published in the small-gpu-bench repo (two PTUNE rows + docs/excerpts/prompt-tune.md); this repo was sanitized for public release (absolute paths and bank-tool name genericized) and committed; runs/ stays out of git.
