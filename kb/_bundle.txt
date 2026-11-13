@@ -1,0 +1,3 @@
+Prompt-tune loop
+
+A cloud model rewrites the instructions of a local model that works on private data, seeing only an aggregate report produced by code. Written to be followed along.

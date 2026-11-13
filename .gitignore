@@ -1,0 +1,6 @@
+# Run records: the author's private loop history (prompts + gateway reports). The
+# published aggregates live in the small-gpu-bench README/excerpt instead.
+runs/
+approved-gateway.sha256
+__pycache__/
+*.pyc
